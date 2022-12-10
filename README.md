@@ -35,7 +35,7 @@
 - Register User
     {{base_url}}/api/register 
 
-- Login User (for token) (you cna use register api token)
+- Login User (for token) (you can use register api token too)
     {{base_url}}/api/login
 
 ####         All Endpoint require  {{token}} for  getting user id 
