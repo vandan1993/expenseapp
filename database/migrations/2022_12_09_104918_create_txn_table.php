@@ -13,14 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('txn', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('number',10)->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('txn_reference')->unique();
+            $table->foreignId('user_id')->index();
+            $table->decimal('amount', 10 , 2)->unsigned();
+            $table->json('txn_details');
+            $table->enum('expense' , ['EQUAL','EXACT','PERCENT']);
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('txn');
     }
 };
