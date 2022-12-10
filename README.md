@@ -1,5 +1,5 @@
 
-<h1 align="center">Basic Laravel App About Expense App</h1>
+<h1 align="center">Expense App Using Laravel </h1>
 <h3 align="center">A baisc split payment app in laravel using api.</h3>
 
 ## Built with
@@ -10,20 +10,22 @@
 
 ## Sqlite3  Configuration
 - Install php dependency  
-
+```bash 
   sudo apt-get install php-sqlite3
+  ```
 
 - Create sqlite3 database file database.sqlite in expenseapp/database
   file path: - expenseapp/database/database.sqlite
 
-- .ENV Configuration
-
+- .env Configuration
+```env
      DB_CONNECTION=sqlite  
      #DB_HOST=127.0.0.1  
      #DB_PORT=3306  
      #DB_DATABASE=laravel  
      #DB_USERNAME=root  
      #DB_PASSWORD=  
+```
 
 ## PostMan Collection 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/1703458-9b87e705-7709-4e71-a8d8-fdf54ecd0da6?action=collection%2Ffork&collection-url=entityId%3D1703458-9b87e705-7709-4e71-a8d8-fdf54ecd0da6%26entityType%3Dcollection%26workspaceId%3D493d307c-7d94-48dc-8f0a-e77eb6cd153f)
