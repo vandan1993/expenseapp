@@ -11,10 +11,12 @@
 Install php dependency  
 sudo apt-get install php-sqlite3
 
-Create sqlite file in 
+Create sqlite3 database file in 
+
 expenseapp/database/database.sqlite
 
 .env configuration
+
 DB_CONNECTION=sqlite
 #DB_HOST=127.0.0.1
 #DB_PORT=3306
@@ -22,6 +24,5 @@ DB_CONNECTION=sqlite
 #DB_USERNAME=root
 #DB_PASSWORD=
 
-#Login 
 ## License
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
